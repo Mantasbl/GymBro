@@ -1,0 +1,570 @@
+/* Main styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+/* Heading styles */
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: .5em 0;
+}
+
+.btn-main {
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.btn-product {
+    border: 2px solid black;
+    color: black;
+}
+
+.btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+.main {
+    margin: 0 15%;
+}
+
+.nav-main {
+    background-color: #fff;
+    height: auto;
+    width: 70%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-main a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 2em 2em;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-main a:hover:not(:first-child) {
+    border-bottom: 1px solid black;
+}
+
+#logo {
+    width: 4em;
+    height: auto;
+    position: absolute;
+    top: -1em;
+    left: 0em;
+}
+
+.nav-main .icon {
+    display: none;
+}
+
+/* Big image section styling */
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #333 url('../_assets/header-main-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+#header-dumbbells {
+    background: #333 url('../_assets/main-dumbbells.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-barbells {
+    background: #333 url('../_assets/main-barbell.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-machines {
+    background: #333 url('../_assets/main-machine.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-wrapper {
+    display: block;
+    align-self: center;
+    color: white;
+}
+
+/* Card Section styling */
+
+#main-cards {
+    padding: 2em 1em 1em;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+
+}
+
+#main-cards ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-cards li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+    box-shadow: 3px 6px #333;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+.card-links {
+    text-decoration: none;
+    color: black;
+}
+
+.product-display {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
+
+/* Task 4 Zoom in on product images on click*/
+
+input[type=checkbox] {
+    display: none;
+}
+
+.product-display img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+    transform: scale(1.5);
+    cursor: zoom-out;
+}
+
+.product-display img {
+    grid-column: 1;
+    transition: transform .2s;
+}
+
+.product-content {
+    grid-column: 2;
+    padding: 0 2em;
+}
+
+
+/* Video section styling */
+
+#video-section video {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.media-controls {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20;
+    grid-template-rows: 1;
+}
+
+#playbtn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+}
+
+#volbtn {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row: 1;
+}
+
+#seekbar {
+    grid-column-start: 2;
+    grid-column-end: 15;
+    grid-row: 1;
+}
+
+#current {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row: 1;
+}
+
+#duration {
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row: 1;
+}
+
+#vol-control {
+    grid-column-start: 18;
+    grid-column-end: 20;
+    grid-row: 1;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('../_assets/arrows-alt-h.svg');
+    cursor: pointer;
+}
+
+/*Subscription Form and overlay styling*/
+
+#overlay {
+    display: none;
+    z-index: 1;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+#subscription-form {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: #FFF;
+    color: #000;
+}
+
+#subscription {
+    display: block;
+    position: absolute;
+}
+
+#subscription p {
+    color: #fff;
+}
+
+#subscription input {}
+
+#submit-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#submit-btn:hover {
+    background: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.form-close {
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Footer styling */
+
+footer {
+    background: black;
+    color: #fff;
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    align-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-a1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    margin-left: 1em;
+    margin-top: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-a2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 2;
+}
+
+.footer-a3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row: 2;
+}
+
+.footer-a4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row: 2;
+    margin-right: 1em;
+}
+
+footer img {
+    display: inline-block;
+    width: auto;
+    margin: 0 1em;
+    height: 40px;
+}
+
+footer p {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row: 1;
+}
+
+.background-selection {
+    margin: 1em 1em;
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row: 1;
+}
+
+.font-selection {
+    margin: 1em 1em;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row: 1;
+}
+
+/*Media Queries*/
+
+/*Makes nav bar invisible and displays hamburger menu for smaller devices*/
+
+@media screen and (max-width: 1081px) {
+    .nav-main a:not(:first-child) {
+        display: none;
+    }
+    .nav-main a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    /* Moves Product section items one above the other on smaller devices*/
+    .product-display {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+
+    }
+    .product-display img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .product-content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+}
+
+@media screen and (max-width: 1081px) {
+    /* The "responsive" class is added to the top nav bar with JavaScript when the user clicks on the icon. Displays the links vertically instead of horizontally */
+    .nav-main.responsive {
+        background: #fff;
+        width: 100%;
+        height: auto;
+
+    }
+    .nav-main {
+        width: 100%;
+    }
+
+    .nav-main a.icon {
+        font-size: 3em;
+        margin: 0.5em;
+
+    }
+    .nav-main.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav-main {
+        display: flex;
+        flex-flow: column;
+
+    }
+    .nav-main.responsive a:not(:nth-child(6)) {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .nav-main a:nth-child(2) {
+        margin-top: 6em;
+    }
+
+    #subscription-form {
+        left: 40%;
+        transform: translateX(-40%);
+    }
+}
+
+/* Displays the cards in a row on desktops, tablets */
+
+@media screen and (min-width: 1081px) {
+    .card-flex {
+        display: flex;
+    }
+
+    .card-flex li {
+        margin: 0 20px;
+        width: 33%;
+    }
+    /*Adds extra haver effects for better interaction on desktop devices*/
+    .nav-main a:hover:not(:first-child) {
+        border: 1px solid black;
+        margin: 0px;
+        padding: 31px;
+        font-size: 1.1em;
+    }
+}
+
+
+/* Tidies up the footer and prevents items from overlapping*/
+
+@media screen and (max-width:850px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3;
+    }
+
+    .footer-a1 {
+        padding: 0.5em 1em;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 3;
+    }
+
+    .footer-a2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 3;
+    }
+
+    .footer-a3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row: 3;
+    }
+
+    .footer-a4 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row: 3;
+    }
+    footer p {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 1;
+    }
+
+    .background-selection {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+    }
+    .font-selection {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row: 2;
+    }
+}
+
+
+/*Removes white side margin from main content and makes the page go full width*/
+
+@media screen and (max-width: 1400px) {
+    .main {
+        margin: 0;
+        overflow: hidden;
+    }
+    .nav-main {
+        width: 100%;
+    }
+}

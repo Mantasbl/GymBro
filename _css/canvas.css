@@ -1,0 +1,10 @@
+#icon-canvas {
+    background:transparent;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:4em;
+    display:none;
+}
