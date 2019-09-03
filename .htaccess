@@ -1,1 +1,5 @@
-ErrorDocument 404 http://mantas.worcestercomputing.com/gymbro/notfound.html
+RewriteEngine On
+RewriteBase /gymbro/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php [QSA,L]

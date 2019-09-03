@@ -1,5 +1,5 @@
 html {
-   background: url(../_assets/404.jpg) no-repeat center center fixed;
+   background: url("../assets/404.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,4 +21,11 @@ body {
 #errorh1 {
     font-size: 10em;
     padding: 0;
+}
+
+#linkHome {
+  margin-top:2em;
+  font-size: 20px;
+  color: black;
+  border: none;
 }

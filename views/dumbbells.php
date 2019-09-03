@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>GYMBRO - Gym Equipments 24/7</title>
-    <link rel="stylesheet" href="../_css/style.css">
-    <link rel="stylesheet" href="../_css/canvas.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/canvas.css">
     <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <canvas id="icon-canvas"></canvas>
     <main class="main">
-        <nav class="nav-main" id="topnav">
-            <a onclick="onClickCanvas()" id="logo"><img src="../_assets/logo.png" alt=""></a>
-            <a href="../index.html">Home</a>
-            <a href="barbells.html">Barbells</a>
-            <a href="dumbbells.html">Dumbbells</a>
-            <a href="machines.html">Machines</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+
+        <?php include ('components/navigationMain.php') ?>
+
         <header>
             <section class="jumbotron" id="header-dumbbells">
                 <div class="content-wrapper">
@@ -30,13 +25,13 @@
         <section class="product-display" id="barbell-display">
             <input type="checkbox" id="zoomCheck">
             <label for="zoomCheck">
-                    <img src="../_assets/product-dumbbells.jpg" alt="">
+                    <img src="assets/product-dumbbells.jpg" alt="">
             </label>
             <div class="product-content">
                 <h1>Dumbbell</h1>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia inventore eum delectus voluptatem molestiae. Inventore explicabo earum, libero! Rem.</p>
                 <audio class="product-sound" controls>
-                    <source src="../_assets/gymsound.mp3">
+                    <source src="assets/gymsound.mp3">
                 </audio>
                 <p id="dumbbell-price" class="product-price">179 &#163;</p>
                 <select name="currency" class="currency">
@@ -79,13 +74,13 @@
                 <option value="Yellow">Background: Yellow</option>
             </select>
             <button class="footer-a1 btn" onmousedown="toggleOverlay()">Subscribe</button>
-            <a class="footer-a2" href="https://www.facebook.com" target="_blank"><img src="../_assets/facebook.png" alt=""></a>
-            <a class="footer-a3" href="https://www.instagram.com" target="_blank"><img src="../_assets/instagram.png" alt=""></a>
-            <a class="footer-a4" href="https://www.twitter.com" target="_blank"><img src="../_assets/twitter.png" alt=""></a>
+            <a class="footer-a2" href="https://www.facebook.com" target="_blank"><img src="assets/facebook.png" alt=""></a>
+            <a class="footer-a3" href="https://www.instagram.com" target="_blank"><img src="assets/instagram.png" alt=""></a>
+            <a class="footer-a4" href="https://www.twitter.com" target="_blank"><img src="assets/twitter.png" alt=""></a>
         </footer>
     </main>
 </body>
-<script src="../_js/script.js"></script>
-<script src="../_js/canvas.js"></script>
+<script src="js/script.js"></script>
+<script src="js/canvas.js"></script>
 
 </html>

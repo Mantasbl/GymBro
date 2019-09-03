@@ -101,7 +101,7 @@ nav {
     display: flex;
     justify-content: center;
     align-content: center;
-    background: #333 url('../_assets/header-main-img.jpg');
+    background: #333 url('../assets/header-main-img.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,21 +110,21 @@ nav {
 }
 
 #header-dumbbells {
-    background: #333 url('../_assets/main-dumbbells.jpg');
+    background: #333 url('../assets/main-dumbbells.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #header-barbells {
-    background: #333 url('../_assets/main-barbell.jpg');
+    background: #333 url('../assets/main-barbell.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #header-machines {
-    background: #333 url('../_assets/main-machine.jpg');
+    background: #333 url('../assets/main-machine.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -277,7 +277,7 @@ input[type=checkbox]:checked ~ label > img {
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('../_assets/arrows-alt-h.svg');
+    background: url('assets/arrows-alt-h.svg');
     cursor: pointer;
 }
 

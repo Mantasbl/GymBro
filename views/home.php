@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>GYMBRO - Gym Equipments 24/7</title>
-    <link rel="stylesheet" href="_css/style.css">
-    <link rel="stylesheet" href="_css/canvas.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/canvas.css">
     <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
@@ -14,14 +14,9 @@
 <body>
     <canvas id="icon-canvas"></canvas>
     <main class="main">
-        <nav class="nav-main" id="topnav">
-            <a onclick="onClickCanvas()" id="logo"><img src="_assets/logo.png" alt=""></a>
-            <a href="index.html">Home</a>
-            <a href="_html/barbells.html">Barbells</a>
-            <a href="_html/dumbbells.html">Dumbbells</a>
-            <a href="_html/machines.html">Machines</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+
+        <?php include ('components/navigationMain.php') ?>
+
         <header>
             <section class="jumbotron" id="header-home">
                 <div class="content-wrapper">
@@ -34,9 +29,9 @@
         <section class="cards" id="main-cards">
             <ul class="card-flex">
                 <li id="first-card">
-                    <a class="card-links" href="dumbbells.html">
+                    <a class="card-links" href="/gymbro/dumbbells">
                         <div class="card">
-                            <img src="_assets/main-dumbbells.jpg">
+                            <img src="assets/main-dumbbells.jpg">
                             <div class="card-content">
                                 <h3 class="card-title">Dumbbells</h3>
                                 <article>Dumbbells provides you with an efficient and compact way of training nearly any muscle group, anywhere.</article>
@@ -45,9 +40,9 @@
                     </a>
                 </li>
                 <li>
-                    <a class="card-links" href="barbells.html">
+                    <a class="card-links" href="/gymbro/barbells">
                         <div class="card">
-                            <img src="_assets/main-barbell.jpg">
+                            <img src="assets/main-barbell.jpg">
                             <div class="card-content">
                                 <h3 class="card-title">Barbells</h3>
                                 <article>Barbells allow more complex exercices to be done with weights of any range, providing you with equipment flexibility and longevity</article>
@@ -56,9 +51,9 @@
                     </a>
                 </li>
                 <li>
-                    <a class="card-links" href="machines.html">
+                    <a class="card-links" href="/gymbro/machines">
                         <div class="card">
-                            <img src="_assets/main-machine.jpg">
+                            <img src="assets/main-machine.jpg">
                             <div class="card-content">
                                 <h3 class="card-title">Machines</h3>
                                 <article>Exercise machines saves you from the hassle of stocking piles of free weights and compressing everything in one place</article>
@@ -70,7 +65,7 @@
         </section>
         <section id="video-section">
             <video id="main-video">
-               <source src="_assets/gym-video.mp4" type="video/mp4">
+               <source src="assets/gym-video.mp4" type="video/mp4">
                Your browser does not support the video tag
            </video>
             <div class="media-controls">
@@ -113,14 +108,14 @@
                 <option value="Yellow">Background: Yellow</option>
             </select>
             <button href="#video-section" class="footer-a1 btn" onmousedown="toggleOverlay()">Subscribe</button>
-            <a class="footer-a2" href="https://www.facebook.com" target="_blank"><img src="_assets/facebook.png" alt=""></a>
-            <a class="footer-a3" href="https://www.instagram.com" target="_blank"><img src="_assets/instagram.png" alt=""></a>
-            <a class="footer-a4" href="https://www.twitter.com" target="_blank"><img src="_assets/twitter.png" alt=""></a>
+            <a class="footer-a2" href="https://www.facebook.com" target="_blank"><img src="assets/facebook.png" alt=""></a>
+            <a class="footer-a3" href="https://www.instagram.com" target="_blank"><img src="assets/instagram.png" alt=""></a>
+            <a class="footer-a4" href="https://www.twitter.com" target="_blank"><img src="assets/twitter.png" alt=""></a>
         </footer>
     </main>
 </body>
-<script src="_js/script.js"></script>
-<script src="_js/media.js"></script>
-<script src="_js/canvas.js"></script>
+<script src="js/script.js"></script>
+<script src="js/media.js"></script>
+<script src="js/canvas.js"></script>
 
 </html>
